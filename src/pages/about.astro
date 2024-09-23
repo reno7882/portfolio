@@ -1,120 +1,1032 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import Icon from "../components/Icon.astro";
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title="Sobre mí | René Cerón"
+  description="Sobre mí René Cerón Lorem "
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="Sobre mí"
+        tagline="Aquí encontrarás más detalles sobre mi trayectoria profesional y experiencia."
+      >
+        <img
+          width="250"
+          height="250"
+          src="/assets/portrait.jpg"
+          alt="René Cerón"
+          style="align-self: center;"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            Mi nombre es René Alejandro Cerón Treviño, soy Licenciado en Diseño
+            Gráfico con cédula profesional No. 8595295, egresado de la
+            Universidad Metropolitana de Monterrey. Mi formación y experiencia
+            abarcan el diseño web, diseño gráfico y marketing digital.
+          </p>
+          <br />
+          <p>
+            Soy una persona dinámica, comprometida y con gran capacidad para
+            trabajar en equipo. Tengo experiencia liderando proyectos y equipos,
+            destacando por mi creatividad, iniciativa para desarrollar nuevas
+            ideas y facilidad para tomar decisiones.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Certificaciones</h2>
+        <div class="content">
+          <div class="flex-container">
+            <div class="card">
+              <img
+                src="../../assets/certificaciones/generando-experiencias-digitales-extraordinarias.jpg"
+                alt="Imagen de ejemplo"
+              />
+              <div class="card-text">
+                <h5>Generando experiencias Digitales Extraordinarias</h5>
+                <a
+                  download
+                  href="../../assets/certificaciones/generando-experiencias-digitales-extraordinarias.pdf"
+                  class="text-acent-400"
+                >
+                  Descargar PDF <Icon icon="descarga" size="1.33em" />
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../../assets/certificaciones/conceptos-basicos-de-agilidad.jpg"
+                alt="Imagen de ejemplo"
+              />
+              <div class="card-text">
+                <h5>Conceptos Básicos de Agilidad</h5>
+                <a
+                  download
+                  href="../../assets/certificaciones/conceptos-basicos-de-agilidad.pdf"
+                  class="text-acent-400"
+                >
+                  Descargar PDF <Icon icon="descarga" size="1.33em" />
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../../assets/certificaciones/Introduccion-al-marco-de-trabajo-scrum.jpg"
+                alt="Imagen de ejemplo"
+              />
+              <div class="card-text">
+                <h5>Introducción al marco de trabajo Scrum</h5>
+                <a
+                  download
+                  href="../../assets/certificaciones/Introduccion-al-marco-de-trabajo-scrum.pdf"
+                  class="text-acent-400"
+                >
+                  Descargar PDF <Icon icon="descarga" size="1.33em" />
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../../assets/certificaciones/digitalizacion-negocio-google.jpg"
+                alt="Imagen de ejemplo"
+              />
+              <div class="card-text">
+                <h5>
+                  Digitalización paso a paso tu negocio con herramientas de
+                  Google
+                </h5>
+                <!-- <p>Descargar PDF aquí</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Educación</h2>
+        <div class="content">
+          <ul style="list-style: disc;">
+            <li>
+              Universidad Metropolitana de Monterrey <br />
+              <span class="text-gray-500"
+                >Licenciatura en Diseño Gráfico. 2007 - 2010</span
+              >
+            </li>
+            <li>
+              Preparatoria No. 7 Las Puentes UANL <br />
+              <span class="text-gray-500">Bachillerato. 2005 - 2007</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Experiencia</h2>
+        <div class="content">
+          <ol class="relative mt-16">
+            <li>
+              <div
+                class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+              >
+                <div class="relative pb-12 md:col-span-2">
+                  <div class="sticky top-0">
+                    <span
+                      class="text-acent-400 -left-[42px] absolute rounded-full text-5xl"
+                      >•</span
+                    >
+                    <h3 class="text-xl font-bold text-acent-400">Web Master</h3>
+                    <h4
+                      class="font-semibold text-xl text-gray-500 dark:text-white"
+                    >
+                      Javer
+                    </h4>
+                    <time
+                      class="p-0 m-0 text-sm text-gray-500/80 dark:text-white/80"
+                      >Actualmente</time
+                    >
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
+                >
+                  <strong> Proyecto principal:</strong> Rediseño y reestructuración
+                  de la aplicación web de Javer (javer.com.mx), incluyendo su soporte
+                  y mantenimiento continuo, atendiendo solicitudes de las diferentes
+                  plazas que la empresa tiene a nivel nacional. <br />
+                  <strong>Adicionalmente:</strong> Gestión de campañas de email marketing
+                  y automatización de envíos masivos.
+                  <!-- <a
+                    href="https://twitch.tv/midudev"
+                    role="link"
+                    class="inline-flex items-center text-lg font-medium text-acent-500 dark:text-acent-200 dark:hover:text-acent-300 hover:text-acent-700"
+                  >
+                    Saber más <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 icon icon-tabler icon-tabler-chevron-right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M9 6l6 6l-6 6"></path>
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+            </li><li>
+              <div
+                class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+              >
+                <div class="relative pb-12 md:col-span-2">
+                  <div class="sticky top-0">
+                    <span
+                      class="text-acent-400 dark:text-acent-400k -left-[42px] absolute rounded-full text-5xl"
+                      >•</span
+                    >
+                    <h3 class="text-xl font-bold text-acent-400">
+                      Instructor de bootcamp
+                    </h3>
+                    <h4
+                      class="font-semibold text-xl text-gray-500 dark:text-white"
+                    >
+                      Tecmilenio
+                    </h4>
+                    <time
+                      class="p-0 m-0 text-sm text-gray-500/80 dark:text-white/80"
+                      >Actualmente</time
+                    >
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
+                >
+                  Actualmente, colaboro de manera externa con Tecmilenio,
+                  impartiendo clases en línea para los módulos de certificación
+                  en los bootcamps de Frontend Fundamentals y UX/UI
+                  Fundamentals.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+              >
+                <div class="relative pb-12 md:col-span-2">
+                  <div class="sticky top-0">
+                    <span
+                      class="text-acent-400 -left-[42px] absolute rounded-full text-5xl"
+                      >•</span
+                    >
+                    <h3 class="text-xl font-bold text-acent-400">
+                      Desarrollador web Front-End
+                    </h3>
+                    <h4
+                      class="font-semibold text-xl text-gray-500 dark:text-white"
+                    >
+                      Tecnológico de Monterrey
+                    </h4>
+                    <time
+                      class="p-0 m-0 text-sm text-gray-500/80 dark:text-white/80"
+                      >Junio 2021 - 2023</time
+                    >
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
+                >
+                  <strong> Proyecto principal:</strong> Responsable de la identidad
+                  visual de la nueva plataforma de solicitudes de admisión: solicitud.tec.mx,
+                  que centralizó el proceso de inscripción a través de una reestructuración
+                  integral. <br />
+                  <strong>Adicionalmente:</strong> Diseño de landing pages para diversos
+                  eventos, como seminarios, talleres y conferencias.
+                  <!-- <a
+                    href="https://twitch.tv/midudev"
+                    role="link"
+                    class="inline-flex items-center text-lg font-medium text-acent-500 dark:text-acent-200 dark:hover:text-acent-300 hover:text-acent-700"
+                  >
+                    Saber más <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 icon icon-tabler icon-tabler-chevron-right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M9 6l6 6l-6 6"></path>
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+            </li><li>
+              <div
+                class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+              >
+                <div class="relative pb-12 md:col-span-2">
+                  <div class="sticky top-0">
+                    <span
+                      class="text-acent-400 dark:text-acent-400k -left-[42px] absolute rounded-full text-5xl"
+                      >•</span
+                    >
+                    <h3 class="text-xl font-bold text-acent-400">
+                      Especialista en Desarrollo web
+                    </h3>
+                    <h4
+                      class="font-semibold text-xl text-gray-500 dark:text-white"
+                    >
+                      Periódico El Norte
+                    </h4>
+                    <time
+                      class="p-0 m-0 text-sm text-gray-500/80 dark:text-white/80"
+                      >Noviembre 2018 - Junio 2021</time
+                    >
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
+                >
+                  <strong>Proyecto a largo plazo:</strong> Desarrollo de un sitio
+                  contenedor de películas y series para el programa "La veo o no
+                  la veo". Visita aquí. <br />
+                  <strong>Desarrollo de un sistema CMS:</strong> Facilita a los editores
+                  de artículos la publicación de contenidos interactivos y enriquecidos,
+                  sin necesidad de contar con conocimientos técnicos de programación.
+                  <br />
+                  <strong> Proyecto de noticias:</strong>
+                  Creación de un sitio dirigido a hispanohablantes residentes en
+                  Estados Unidos. Visita aquí. <br />
+                  <strong>Mantenimiento de elnorte.com:</strong> Actualización constante
+                  de la página web y la aplicación con imágenes y contenido. Desarrollo
+                  de micrositios para artículos especiales y creación de promociones
+                  para redes sociales, tanto estáticas como animadas.
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+              >
+                <div class="relative pb-12 md:col-span-2">
+                  <div class="sticky top-0">
+                    <span
+                      class="text-acent-400 -left-[42px] absolute rounded-full text-5xl"
+                      >•</span
+                    >
+                    <h3 class="text-xl font-bold text-acent-400">
+                      Especialista en Diseño Web
+                    </h3>
+                    <h4
+                      class="font-semibold text-xl text-gray-500 dark:text-white"
+                    >
+                      Tecnológico de Monterrey
+                    </h4>
+                    <time
+                      class="p-0 m-0 text-sm text-gray-500/80 dark:text-white/80"
+                      >Mayo 2016 Noviembre 2018</time
+                    >
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
+                >
+                  En el área de marketing para posgrados del Tecnológico de
+                  Monterrey, me encargué de la atención a los campus de México y
+                  LATAM, gestionando su publicidad impresa y digital. Mis
+                  responsabilidades incluyeron la creación de newsletters,
+                  flyers, pósters, panorámicos, contenido para redes sociales y
+                  campañas en Google Display y Facebook. <br />
+                  <br />Además, de diseñar páginas de aterrizaje y formularios
+                  de contacto conectados a CRM Salesforce, elaboré reportes de
+                  leads, administré bases de datos y participé en proyectos
+                  especiales, tanto a corto como a largo plazo, incluyendo el
+                  desarrollo e implementación de un sistema de tickets de
+                  solicitudes (Helpdesk).
+                  <!-- <a
+                    href="https://twitch.tv/midudev"
+                    role="link"
+                    class="inline-flex items-center text-lg font-medium text-acent-500 dark:text-acent-200 dark:hover:text-acent-300 hover:text-acent-700"
+                  >
+                    Saber más <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 icon icon-tabler icon-tabler-chevron-right"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M9 6l6 6l-6 6"></path>
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+            </li><li>
+              <div
+                class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+              >
+                <div class="relative pb-12 md:col-span-2">
+                  <div class="sticky top-0">
+                    <span
+                      class="text-acent-400 dark:text-acent-400k -left-[42px] absolute rounded-full text-5xl"
+                      >•</span
+                    >
+                    <h3 class="text-xl font-bold text-acent-400">
+                      Diseño y Administración Web
+                    </h3>
+                    <h4
+                      class="font-semibold text-xl text-gray-500 dark:text-white"
+                    >
+                      Comunicación Social Municipio de Guadalupe
+                    </h4>
+                    <time
+                      class="p-0 m-0 text-sm text-gray-500/80 dark:text-white/80"
+                      >Enero 2015 - Mayo 2016</time
+                    >
+                  </div>
+                </div>
+                <div
+                  class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
+                >
+                  Me encargué de subir boletines a la página del municipio de
+                  Guadalupe y enviar esos mismos boletines a medios de
+                  comunicación como televisión, radio y prensa. También realicé
+                  la edición de fotos para redes sociales e impresos, así como
+                  el diseño de lonas y fondos, además de crear imágenes y GIFs
+                  para las redes sociales. <br />
+                  <br /> Mi labor incluyó la atención a medios de comunicación y
+                  el monitoreo de estos, que implicaba grabar programas de TV y radio
+                  y llevar un libro de notas periodísticas. También gestioné las
+                  páginas web del candidato y del municipio de Guadalupe.
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Tecnologías</h2>
+        <div class="content">
+          <h5 class="text-gray-500">Desarrollo Web | UX/UI</h5>
+          <table>
+            <thead>
+              <tr>
+                <th>TECNOLOGÍA</th>
 
-		<ContactCTA />
-	</div>
+                <th>NIVEL DE EXPERIENCIA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-column="TECNOLOGÍA">Visual Studio Code</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="100" max="100"
+                    >100 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Git / Github</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="100" max="100"
+                    >100 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Figma</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="100" max="100"
+                    >100 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Html</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="100" max="100"
+                    >100 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Css</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="100" max="100"
+                    >100 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Javascript</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="90" max="100"
+                    >90 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Wordpress</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="90" max="100"
+                    >90 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">React Js</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Jquery</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">MySQL</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">MongoDB</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="65" max="100"
+                    >65 %</progress
+                  ><output id="progress-output-2"> Intermedio</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Node js</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="65" max="100"
+                    >65 %</progress
+                  ><output id="progress-output-2"> Intermedio</output></td
+                >
+              </tr>
+
+              <tr>
+                <td data-column="TECNOLOGÍA">AWS </td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="65" max="100"
+                    >65 %</progress
+                  ><output id="progress-output-2"> Intermedio</output></td
+                >
+              </tr>
+            </tbody>
+          </table>
+          <h5 class="text-gray-500">Marketing Digital</h5>
+          <table>
+            <thead>
+              <tr>
+                <th>TECNOLOGÍA</th>
+
+                <th>NIVEL DE EXPERIENCIA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-column="TECNOLOGÍA">Marketing Cloud</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Salesforce</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="65" max="100"
+                    >65 %</progress
+                  ><output id="progress-output-2"> Intermedio</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Hubspot</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="65" max="100"
+                    >65 %</progress
+                  ><output id="progress-output-2"> Intermedio</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Google Ads</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Google Analytics</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Google Tag Manager</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Email marketing</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="80" max="100"
+                    >80 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+
+              <tr>
+                <td data-column="TECNOLOGÍA"> Semrush</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="65" max="100"
+                    >65 %</progress
+                  ><output id="progress-output-2"> Intermedio</output></td
+                >
+              </tr>
+            </tbody>
+          </table>
+          <h5 class="text-gray-500">Diseño | Multimedia</h5>
+          <table>
+            <thead>
+              <tr>
+                <th>TECNOLOGÍA</th>
+
+                <th>NIVEL DE EXPERIENCIA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-column="TECNOLOGÍA">Adobe Photoshop</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="100" max="100"
+                    >100 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Adobe Illustrator</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="100" max="100"
+                    >100 %</progress
+                  ><output id="progress-output-2"> Avanzado</output></td
+                >
+              </tr>
+              <tr>
+                <td data-column="TECNOLOGÍA">Adobe Premier</td>
+
+                <td data-column="NIVEL DE EXPERIENCIA"
+                  ><progress id="progress-bar-2" value="65" max="100"
+                    >65 %</progress
+                  ><output id="progress-output-2"> Intermedio</output></td
+                >
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Hard Skills</h2>
+        <div class="content">
+          <h5 class="text-gray-500">Conocimientos técnicos:</h5>
+          <br />
+          <ul style="list-style: disc; padding:revert">
+            <li>
+              <strong> Gestión de sitios web:</strong>
+              <span class="text-gray-500"
+                >Experiencia en la administración de contenido (CMS), como
+                WordPress, Joomla, Drupal, Shopify, etc.</span
+              >
+            </li>
+            <li>
+              <strong>Landing pages:</strong><span class="text-gray-500">
+                Capacidad para crear y/o modificar landing pages optimizadas
+                para la conversión.</span
+              >
+            </li>
+            <li>
+              <strong>SEO y rendimiento web: </strong><span
+                class="text-gray-500"
+              >
+                Conocimientos de SEO técnico y mejores prácticas para la
+                optimización del rendimiento del sitio web.</span
+              >
+            </li>
+            <li>
+              <strong>Html/Css/javascript: </strong><span class="text-gray-500">
+                Conocimientos avanzados para desarrollar, optimizar y ajustar
+                sitios web y aplicaciones web.</span
+              >
+            </li>
+            <li>
+              <strong>Google Analytics: </strong><span class="text-gray-500">
+                Habilidad para crear y analizar reportes de rendimiento web y
+                tráfico en Google Analytics.</span
+              >
+            </li>
+          </ul>
+          <br />
+          <h5 class="text-gray-500">Marketing digital:</h5>
+          <br />
+          <ul style="list-style: disc; padding:revert">
+            <li>
+              <strong>Email marketing: </strong>
+              <span class="text-gray-500"
+                >Experiencia en la gestión de campañas de email marketing,
+                incluyendo diseño, segmentación y automatización.</span
+              >
+            </li>
+            <li>
+              <strong>Marketing automation: </strong><span
+                class="text-gray-500"
+              >
+                Uso de plataformas de automatización de marketing como
+                Salesforce, HubSpot, ActiveCampaign o similares.</span
+              >
+            </li>
+            <li>
+              <strong>UTM tracking: </strong><span class="text-gray-500">
+                Habilidad para implementar parámetros UTM y rastrear
+                conversiones.</span
+              >
+            </li>
+            <li>
+              <strong>Campañas publicitarias: </strong><span
+                class="text-gray-500"
+              >
+                Familiaridad con la gestión de anuncios en plataformas como
+                Google Ads y redes sociales.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="content">
+          <h5 class="text-gray-500">Habilidades interpersonales:</h5>
+          <br />
+          <ul style="list-style: disc; padding:revert">
+            <li>
+              <strong>Gestión de proveedores: </strong>
+              <span class="text-gray-500"
+                >Capacidad para coordinar y trabajar como intermediario entre la
+                empresa y el proveedor web, gestionando mejoras y
+                actualizaciones.</span
+              >
+            </li>
+            <li>
+              <strong>Comunicación efectiva: </strong><span
+                class="text-gray-500"
+              >
+                Habilidad para interactuar con diferentes departamentos y
+                atender a las necesidades de distintas plazas.</span
+              >
+            </li>
+            <li>
+              <strong>Trabajo en equipo: </strong><span class="text-gray-500">
+                Colaborar con el equipo de marketing y otros departamentos para
+                implementar cambios y estrategias.</span
+              >
+            </li>
+            <li>
+              <strong>Atención al detalle:</strong><span class="text-gray-500">
+                Precisión en la carga y modificación de contenido en el sitio
+                web, asegurando que todo el contenido esté actualizado y sea
+                coherente con las estrategias de marketing.</span
+              >
+            </li>
+            <li>
+              <strong>Orientación a resultados: </strong><span
+                class="text-gray-500"
+              >
+                Capacidad para trabajar orientado a KPI y métricas clave de
+                éxito en el marketing digital, asegurando el cumplimiento de los
+                objetivos de la empresa.</span
+              >
+            </li>
+          </ul>
+          <br />
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <ContactCTA />
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    /* margin-top: 1.5rem; */
+    /* border-radius: 1.5rem; */
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+
+  /* Estilo general de la barra de progreso */
+  progress {
+    height: 1rem;
+    appearance: none; /* Elimina el estilo por defecto */
+  }
+
+  /* Fondo de la barra de progreso */
+  progress::-webkit-progress-bar {
+    background-color: #e0e0e0; /* Cambia este color para ajustar el fondo */
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  /* Color de la parte "llena" en navegadores WebKit (Chrome, Safari, Edge) */
+  progress::-webkit-progress-value {
+    background: var(
+      --gradient-accent-orange
+    ); /* Cambia este color para ajustar el progreso */
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  /* Color de la parte "llena" en navegadores basados en Firefox */
+  progress::-moz-progress-bar {
+    background: var(
+      --gradient-accent-orange
+    ); /* Cambia este color para ajustar el progreso */
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+
+  /* Zebra striping */
+  /* tr:nth-of-type(odd) {
+      background: #eee;
+    } */
+
+  th {
+    color: var(--gray-0);
+    font-weight: bold;
+  }
+
+  td,
+  th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  /* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+  @media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+    table {
+      width: 100%;
+    }
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      border: 1px solid #ccc;
+    }
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      /* Label the data */
+      content: attr(data-column);
+
+      color: var(--gray-0);
+      font-weight: bold;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    /* margin: 2rem; */
+    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    /* border: 2px solid #141414;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); */
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #141414;
+  }
+
+  .card-text {
+    padding-top: 1rem;
+  }
+
+  .card-text h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .card-text p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  /* Estilos responsivos para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 90%; /* Las tarjetas ocuparán el 90% del ancho en pantallas pequeñas */
+    }
+  }
 </style>
