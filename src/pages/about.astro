@@ -14,7 +14,7 @@ import Icon from "../components/Icon.astro";
     <main class="wrapper about">
       <Hero
         title="Sobre mí"
-        tagline="Aquí encontrarás más detalles sobre mi trayectoria profesional y experiencia."
+        tagline="Aquí encontrarás más detalles sobre mi experiencia y trayectoria profesional."
       >
         <img
           width="250"
@@ -50,7 +50,7 @@ import Icon from "../components/Icon.astro";
             <div class="card">
               <img
                 src="../../assets/certificaciones/generando-experiencias-digitales-extraordinarias.jpg"
-                alt="Imagen de ejemplo"
+                alt="generando-experiencias-digitales-extraordinarias"
               />
               <div class="card-text">
                 <h5>Generando experiencias Digitales Extraordinarias</h5>
@@ -66,7 +66,7 @@ import Icon from "../components/Icon.astro";
             <div class="card">
               <img
                 src="../../assets/certificaciones/conceptos-basicos-de-agilidad.jpg"
-                alt="Imagen de ejemplo"
+                alt="conceptos-basicos-de-agilidad"
               />
               <div class="card-text">
                 <h5>Conceptos Básicos de Agilidad</h5>
@@ -82,7 +82,7 @@ import Icon from "../components/Icon.astro";
             <div class="card">
               <img
                 src="../../assets/certificaciones/Introduccion-al-marco-de-trabajo-scrum.jpg"
-                alt="Imagen de ejemplo"
+                alt="Introduccion-al-marco-de-trabajo-scrum"
               />
               <div class="card-text">
                 <h5>Introducción al marco de trabajo Scrum</h5>
@@ -98,14 +98,52 @@ import Icon from "../components/Icon.astro";
             <div class="card">
               <img
                 src="../../assets/certificaciones/digitalizacion-negocio-google.jpg"
-                alt="Imagen de ejemplo"
+                alt="digitalizacion-negocio-google"
               />
               <div class="card-text">
                 <h5>
                   Digitalización paso a paso tu negocio con herramientas de
                   Google
                 </h5>
-                <!-- <p>Descargar PDF aquí</p> -->
+                <a
+                  download
+                  href="../../assets/certificaciones/digitalizacion-negocio-google.pdf"
+                  class="text-acent-400"
+                >
+                  Descargar PDF <Icon icon="descarga" size="1.33em" />
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../../assets/certificaciones/conceptos-basicos-marketing-digital.jpg"
+                alt="Imagen de ejemplo"
+              />
+              <div class="card-text">
+                <h5>Conceptos básicos del marketing digital</h5>
+                <a
+                  download
+                  href="../../assets/certificaciones/conceptos-basicos-marketing-digital.pdf"
+                  class="text-acent-400"
+                >
+                  Descargar PDF <Icon icon="descarga" size="1.33em" />
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../../assets/certificaciones/Fundations-of-user-experience-UX-Design.jpg"
+                alt="Imagen de ejemplo"
+              />
+              <div class="card-text">
+                <h5>Fundations of user experience (UX) Design</h5>
+                <a
+                  download
+                  href="../../assets/certificaciones/Fundations-of-user-experience-UX-Design.pdf"
+                  class="text-acent-400"
+                >
+                  Descargar PDF <Icon icon="descarga" size="1.33em" />
+                </a>
               </div>
             </div>
           </div>
@@ -157,12 +195,19 @@ import Icon from "../components/Icon.astro";
                 <div
                   class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
                 >
-                  <strong> Proyecto principal:</strong> Rediseño y reestructuración
-                  de la aplicación web de Javer (javer.com.mx), incluyendo su soporte
-                  y mantenimiento continuo, atendiendo solicitudes de las diferentes
-                  plazas que la empresa tiene a nivel nacional. <br />
-                  <strong>Adicionalmente:</strong> Gestión de campañas de email marketing
-                  y automatización de envíos masivos.
+                  <p>
+                    <strong> Proyecto principal:</strong> Rediseño y reestructuración
+                    de la aplicación web de Javer (<a
+                      style="display: inline-block;"
+                      href="https://javer.com.mx"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow">Visita aquí</a
+                    >), incluyendo su soporte y mantenimiento continuo,
+                    atendiendo solicitudes de las diferentes plazas que la
+                    empresa tiene a nivel nacional. <br />
+                    <strong>Adicionalmente:</strong> Gestión de campañas de email
+                    marketing y automatización de envíos masivos.
+                  </p>
                   <!-- <a
                     href="https://twitch.tv/midudev"
                     role="link"
@@ -247,12 +292,18 @@ import Icon from "../components/Icon.astro";
                 <div
                   class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
                 >
-                  <strong> Proyecto principal:</strong> Responsable de la identidad
-                  visual de la nueva plataforma de solicitudes de admisión: solicitud.tec.mx,
-                  que centralizó el proceso de inscripción a través de una reestructuración
-                  integral. <br />
-                  <strong>Adicionalmente:</strong> Diseño de landing pages para diversos
-                  eventos, como seminarios, talleres y conferencias.
+                  <p>
+                    <strong> Proyecto principal:</strong> Responsable de la identidad
+                    visual de la nueva plataforma de solicitudes de admisión: (<a
+                      style="display: inline-block;"
+                      href="https://solicitud.tec.mx/ERx_Forms__Portal_Login"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow">Visita aquí</a
+                    >), que centralizó el proceso de inscripción a través de una
+                    reestructuración integral. <br />
+                    <strong>Adicionalmente:</strong> Diseño de landing pages para
+                    diversos eventos, como seminarios, talleres y conferencias.
+                  </p>
                   <!-- <a
                     href="https://twitch.tv/midudev"
                     role="link"
@@ -305,14 +356,24 @@ import Icon from "../components/Icon.astro";
                 >
                   <strong>Proyecto a largo plazo:</strong> Desarrollo de un sitio
                   contenedor de películas y series para el programa "La veo o no
-                  la veo". Visita aquí. <br />
+                  la veo". <a
+                    href="https://graficos.gruporeforma.com/laveo/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow">Visita aquí</a
+                  >
+                  <br />
                   <strong>Desarrollo de un sistema CMS:</strong> Facilita a los editores
                   de artículos la publicación de contenidos interactivos y enriquecidos,
                   sin necesidad de contar con conocimientos técnicos de programación.
                   <br />
                   <strong> Proyecto de noticias:</strong>
                   Creación de un sitio dirigido a hispanohablantes residentes en
-                  Estados Unidos. Visita aquí. <br />
+                  Estados Unidos.<a
+                    href="https://mexicotoday.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow">Visita aquí</a
+                  >
+                  <br />
                   <strong>Mantenimiento de elnorte.com:</strong> Actualización constante
                   de la página web y la aplicación con imágenes y contenido. Desarrollo
                   de micrositios para artículos especiales y creación de promociones
@@ -348,8 +409,8 @@ import Icon from "../components/Icon.astro";
                   class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
                 >
                   En el área de marketing para posgrados del Tecnológico de
-                  Monterrey, me encargué de la atención a los campus de México y
-                  LATAM, gestionando su publicidad impresa y digital. Mis
+                  Monterrey, prestando servicio a los campus de México y LATAM,
+                  gestionando su publicidad impresa y digital. Mis
                   responsabilidades incluyeron la creación de newsletters,
                   flyers, pósters, panorámicos, contenido para redes sociales y
                   campañas en Google Display y Facebook. <br />
@@ -409,16 +470,13 @@ import Icon from "../components/Icon.astro";
                 <div
                   class="relative flex flex-col gap-2 pb-4 text-gray-500 dark:text-gray-300 md:col-span-3"
                 >
-                  Me encargué de subir boletines a la página del municipio de
-                  Guadalupe y enviar esos mismos boletines a medios de
-                  comunicación como televisión, radio y prensa. También realicé
-                  la edición de fotos para redes sociales e impresos, así como
-                  el diseño de lonas y fondos, además de crear imágenes y GIFs
-                  para las redes sociales. <br />
-                  <br /> Mi labor incluyó la atención a medios de comunicación y
-                  el monitoreo de estos, que implicaba grabar programas de TV y radio
-                  y llevar un libro de notas periodísticas. También gestioné las
-                  páginas web del candidato y del municipio de Guadalupe.
+                  Encargado de la publicación de boletines en la página del
+                  municipio de Guadalupe así como compartiendo la información a
+                  los diferentes medios de comunicación como televisión, radio y
+                  prensa. <br /><br /> También realizando la edición de fotos para
+                  redes sociales e impresos, así como el diseño de lonas y fondos,
+                  además de crear imágenes animadas para las redes sociales. <br
+                  />
                 </div>
               </div>
             </li>
