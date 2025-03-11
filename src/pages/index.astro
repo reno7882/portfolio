@@ -42,7 +42,7 @@ const projects = (await getCollection("work"))
         </Hero>
 
         <img
-          alt="René Cerón smiling in a red plaid shirt and tortoise shell glasses"
+          alt="René Cerón"
           width="480"
           height="620"
           src="/assets/portrait.jpg"
@@ -64,6 +64,16 @@ const projects = (await getCollection("work"))
 
         <div class="gallery">
           <Grid variant="offset">
+                      <li>
+              <PortfolioPreview
+                src="../assets/proyectos/regiosgrills.png"
+                target="_blank"
+                href="https://regiosgrills.com"
+                span="Regios Grills"
+                alt="Regios Grills"
+                rel="noopener noreferrer nofollow"
+              />
+            </li>
             <li>
               <PortfolioPreview
                 src="../assets/proyectos/javer.png"
@@ -129,6 +139,7 @@ const projects = (await getCollection("work"))
           <Grid variant="small">
             {
               [
+                { name: "Regios Grills", link: "https://regiosgrills.com" },
                 { name: "Casas Javer", link: "https://www.javer.com.mx/" },
                 {
                   name: "Tecnológico de Monterrey",
